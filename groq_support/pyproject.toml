@@ -1,0 +1,23 @@
+[project]
+name = "groq-support"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saniya", email = "sani.afzal@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.13",
+    "langchain-groq>=1.1.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+groq-support = "groq_support:main"
+
+[build-system]
+requires = ["uv_build>=0.11.28,<0.12.0"]
+build-backend = "uv_build"
